@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: hello.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/hello.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: excel_to_json.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/excel_to_json.py",
+      "args": [
+        "${workspaceFolder}/data/sample_structure.xlsx"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

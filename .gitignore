@@ -10,7 +10,7 @@ env/
 .venv
 
 # IDE
-.vscode/
+# .vscode/  # Allow for shared dev config
 .idea/
 *.swp
 *.swo

@@ -1,0 +1,114 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install Dependencies (uv)",
+      "type": "shell",
+      "command": "uv",
+      "args": [
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Install Dependencies (pip)",
+      "type": "shell",
+      "command": "pip",
+      "args": [
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run hello.py",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts/hello.py"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run excel_to_json.py (sample)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts/excel_to_json.py",
+        "data/sample_structure.xlsx"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Lint (ruff)",
+      "type": "shell",
+      "command": "ruff",
+      "args": [
+        "check",
+        "."
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [
+        "$py"
+      ]
+    },
+    {
+      "label": "Format (black)",
+      "type": "shell",
+      "command": "black",
+      "args": [
+        "."
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Type Check (pyright)",
+      "type": "shell",
+      "command": "pyright",
+      "args": [
+        "."
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [
+        "$py"
+      ]
+    }
+  ]
+}
